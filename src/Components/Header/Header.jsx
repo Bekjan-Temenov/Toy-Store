@@ -1,9 +1,9 @@
-
+import {Container} from "postcss/lib/container";
 const Header = () => {
   return (
-    <div>
+    <Container>
       Header
-    </div>
+    </Container>
   );
 }
 
