@@ -1,10 +1,11 @@
+import { Container } from "../../Container/Container";
 
 
 function Footer() {
   return (
-    <div>
+    <Container>
       Footer
-    </div>
+    </Container>
   );
 }
 

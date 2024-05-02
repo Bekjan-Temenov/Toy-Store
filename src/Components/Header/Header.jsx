@@ -1,10 +1,13 @@
+import { Container } from "../../Container/Container";
 
 
 const Header = () => {
   return (
-    <div className="bg-red-300">
-      Header
-    </div>
+    <Container>
+      <div className="bg-red-300">
+        Header
+      </div>
+    </Container>
   );
 }
 
