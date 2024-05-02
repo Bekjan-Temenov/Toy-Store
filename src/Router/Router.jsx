@@ -7,6 +7,8 @@ import AboutPage from "../pages/AboutPage"
 import CatalogPage from "../pages/CatalogPage"
 import ContactsPage from "../pages/ContactsPage"
 import DeliverPage from "../pages/DeliverPage"
+import AlProducts from "../pages/AlProducts/AlProducts"
+import Blog from "../pages/Blog/Blog"
 
 
 export const router = createBrowserRouter([{
@@ -33,6 +35,14 @@ export const router = createBrowserRouter([{
         {
             path:"deliver",
             element:<DeliverPage/>
+        },
+        {
+            path:"all",
+            element:<AlProducts/>
+        },
+        {
+            path:'blog',
+            element:<Blog/>
         }
     ]
 }])
