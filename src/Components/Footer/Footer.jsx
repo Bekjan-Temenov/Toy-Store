@@ -1,5 +1,4 @@
-import { Container } from "../../Container/Container";
-
+import { Container } from "../Container/container";
 
 function Footer() {
   return (
@@ -8,5 +7,4 @@ function Footer() {
     </Container>
   );
 }
-
 export default Footer;

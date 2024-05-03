@@ -1,16 +1,42 @@
-import { Container } from "../../Container/Container";
+import { Container } from "../Container/container";
+import { motion } from "framer-motion";
 import * as Ariakit from "@ariakit/react";
 import img from "../../assets/svg/inputimg.svg";
 import icon from "../../assets/svg/inputselect.svg"
 function Input() {
+
+  const animation = {
+    hidden: {
+      x: -900,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+    }
+  }
+  const animations = {
+    hidden: {
+      x: 600,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+    }
+  }
   return (
     <Container>
-      <div className="flex mt-[19px] ">
-        <div className="flex mr-20 relative">
+      <motion.div
+        initial="hidden"
+        whileInView='visible'
+        viewport={{amount:0.5 ,once:true }}
+        className="flex mt-[19px] ">
+        <motion.div variants={animation}  className="flex mr-20 relative">
           <img className="p-6 absolute" src={img} alt="img" />
           <input className="w-[825px] h-[64px] border border-gray-300 pl-12 border-light-grey rounded-full" type="text" placeholder="Search" />
-        </div>
-        <div className="wrapper">
+        </motion.div>
+        <motion.div variants={animations} className="wrapper">
           <Ariakit.SelectProvider defaultValue="Apple">
             <Ariakit.SelectLabel className="label text-gray-400 absolute ml-4">
               Sort by
@@ -34,8 +60,8 @@ function Input() {
               </div>
             </Ariakit.SelectPopover>
           </Ariakit.SelectProvider>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </Container>
   );
 }

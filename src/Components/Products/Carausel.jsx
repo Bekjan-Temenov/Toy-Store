@@ -1,5 +1,5 @@
 import { motion} from "framer-motion";
-import { Container } from "../../Container/Container";
+import { Container } from "../Container/container";
 import carausel from "../../assets/svg/carousel.svg"
 function Carousel() {
   return (
