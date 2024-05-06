@@ -33,7 +33,6 @@ function App() {
             gradientEnd: "pink",
         }
     ];
-
     const animation ={
         hidden:{
             y: -100,
@@ -45,7 +44,6 @@ function App() {
             transition:{delay: custom * 0.3}
         })
     }
-
     return (
         <motion.div
         initial="hidden"
@@ -93,4 +91,3 @@ function App() {
     );
 }
 export default App;
-
