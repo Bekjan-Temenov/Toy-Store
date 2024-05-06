@@ -31,7 +31,7 @@ function BannerStart() {
                     custom={1}
                     variants={animation}
                     className="bg-cover  col-span-2 row-span-1 "
-                    style={{ backgroundImage: `url(${p4})` }}
+                    style={{Image: `url(${p4})` }}
                 >
                     <div className="absolute m-[30px]    w-[401px] h-[239px] ">
                         <div className="flex gap-[10px] ">
