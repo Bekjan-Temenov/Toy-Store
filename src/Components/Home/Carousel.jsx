@@ -33,25 +33,23 @@ function App() {
             gradientEnd: "pink",
         }
     ];
-
-    const animation ={
-        hidden:{
+    const animation = {
+        hidden: {
             y: -100,
-            opacity:0,
+            opacity: 0,
         },
         visible: custom => ({
-            y:0,
-            opacity:1,
-            transition:{delay: custom * 0.3}
+            y: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.3 }
         })
     }
-
     return (
         <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{amount:0.3 , once: "true"}}
-         className="flex flex-col items-center justify-start h-[622px] bg-white ">
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3, once: "true" }}
+            className="flex flex-col items-center justify-start h-[622px] bg-white ">
             <h1 className="text-3xl font-bold mt-[51px] mb-[44px]">What out clients say</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {quotes.map((quote, index) => (
@@ -93,4 +91,3 @@ function App() {
     );
 }
 export default App;
-
