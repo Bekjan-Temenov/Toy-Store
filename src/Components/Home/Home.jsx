@@ -10,13 +10,13 @@ import Women from "./Women";
 function Home() {
   return (
     <Container>
-      <List/>
-      <Filter/>
-      <Products/>
-      <Banners/>
-      <BannerStart/>
-      <Carousel/>
-      <Women/>
+      <List />
+      <Filter />
+      <Products />
+      <Banners />
+      <BannerStart />
+      <Carousel />
+      <Women />
     </Container>
   );
 }
