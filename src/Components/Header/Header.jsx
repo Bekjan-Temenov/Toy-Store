@@ -1,4 +1,3 @@
-
 import { Container } from '../../Container/Сontainer';
 import CustomInput from './Input/Input';
 import Instagram from './Instagram/Instagram';
@@ -20,6 +19,5 @@ const Header = () => {
     </Container>
   );
 }
-
 export default Header;
 
