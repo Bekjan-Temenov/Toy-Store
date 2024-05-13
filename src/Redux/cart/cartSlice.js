@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
                 state.carts.push({ ...action.payload, quantity: 1 })
             }
         },
-        updateQuantity: (state, action) => {
+        updateQuantity: (state, action) => { 
             const { id, quantity } = action.payload;
             const item = state.carts.find((x) => x.id === id)
             if (item) {
