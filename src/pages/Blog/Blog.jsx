@@ -4,6 +4,7 @@ import fresh from '../../assets/svg/fresh.svg'
 import fresh2 from '../../assets/svg/fresh-sweet-basil-leaves-isolated-white-background 2.svg'
 import fresh3 from '../../assets/svg/fresh-sweet-basil-leaves-isolated-white-background 1 (3).svg'
 import fresh4 from '../../assets/svg/fresh-sweet1.svg'
+import Sort from '../Sort/Sort'
 
 const Blog = () => {
   return (
@@ -21,6 +22,7 @@ const Blog = () => {
         <img className='absolute left-[73rem] bottom-[8rem]' src={fresh4} alt="" />
       </div>
       </div>
+      <Sort/>
     </Container>
   )
 }

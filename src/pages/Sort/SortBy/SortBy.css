@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+.menu {
+ 
+  width: 300px;
+}
+
+
+
+
+
+
+button {
+  -webkit-appearance: button;
+  background: var(--accent);
+  color: var(--background);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  padding-left:100px;
+  align-items: flex-start;
+  justify-content: center;
+  /* background: var(--accent); */
+  /* color: var(--background); */
+  /* font-size: 240px; */
+  /* line-height: 260px; */
+  /* font-weight: 700;   */
+  border-radius: 30px;
+  border:2px solid;
+}
