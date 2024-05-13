@@ -1,5 +1,5 @@
 
-import { Container } from './../../Container/container';
+import { Container } from '../../Container/container';
 import CustomInput from './Input/Input';
 import Instagram from './Instagram/Instagram';
 import Logo from './Logo/Logo';
