@@ -10,7 +10,7 @@ function YourComponent() {
   };
 
   return (
-    <div className="border absolute ml-[275px] mt-[-20px] w-[40px] h-[40px] rounded-full flex items-center justify-center">
+    <div className="border absolute ml-[295px] mt-[-20px] w-[40px] h-[40px] rounded-full flex items-center pl-[9px]">
       <button onClick={toggleLike}>
         <img 
           src={isLiked ? heartFilled : heart} 
